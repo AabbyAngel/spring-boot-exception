@@ -1,0 +1,21 @@
+server:
+  port: 8081
+
+#########全局配置项############
+system:
+  ajax: true
+  #######异常相关配置项#########
+  exception:
+    ######默认错误号############
+    default-error-code: 100
+    ######默认错误信息##########
+    default-error-info: 服务器开小差了，等会再来
+    ######默认错误状态#########
+    default-status: 500
+    ######扫描包路径,当 出现运行时异常时,提取此包下的堆栈信息,方便开发人员定位具体错误代码行###########
+    basePackages: cn.winner.cloud
+    ######异常错误号前缀配置,分为数据绑定,业务,系统 3类异常#######
+    bind-exception-prefix: BIND-
+    biz-exception-prefix: BIZ-
+    system-exception-prefix: SYS-
+  ####服务层参数验证相关配置##########
